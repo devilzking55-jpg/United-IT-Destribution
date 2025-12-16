@@ -1492,6 +1492,61 @@
         function closeSuccessModal() {
             document.getElementById('successModal').style.display = 'none';
         }
+
+        // --- CUSTOM NAVIGATION (History API) ---
+        document.addEventListener("DOMContentLoaded", () => {
+            // Function to handle navigation
+            const navigateToSection = (targetId) => {
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                    // Update URL without hash
+                    const newPath = targetId === 'home' ? '/' : `/${targetId}`;
+                    history.pushState(null, null, newPath);
+                    // Update active state in menu
+                    document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${targetId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            };
+
+            // Intercept clicks on links starting with #
+            document.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1); // Remove #
+                    if (targetId) navigateToSection(targetId);
+
+                    // Close mobile menu if open
+                    const menu = document.getElementById('mobileMenu');
+                    if (menu && menu.classList.contains('active')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            // Handle Back/Forward buttons
+            window.addEventListener('popstate', () => {
+                const path = window.location.pathname.replace('/', '');
+                const targetId = path || 'home';
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+
+            // Initial load handling (if server supports it and we land on /about)
+            const path = window.location.pathname.replace('/', '');
+            if (path && document.getElementById(path)) {
+                // specific section requested via path
+                setTimeout(() => {
+                    document.getElementById(path).scrollIntoView({ behavior: 'auto' });
+                }, 100);
+            }
+        });
     </script>
     <!-- Success Modal -->
     <div id="successModal"
