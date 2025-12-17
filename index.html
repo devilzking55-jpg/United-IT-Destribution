@@ -4,30 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>United IT Distribution | Top Cybersecurity Distributor in Dubai, UAE</title>
     <meta name="description"
-        content="United IT Distribution is a leading cybersecurity distributor in Dubai, UAE. We provide SASE, Cloud-Native, Data Center, and Endpoint security solutions to empower businesses.">
+        content="United IT Distribution is a leading cybersecurity distributor in Dubai, UAE. We provide SASE, Cloud-Native, Data Center security, and Threat Intelligence solutions to empower businesses.">
     <meta name="keywords"
-        content="Cybersecurity Distributor, SASE, Cloud Security, Data Center Security, Dubai, UAE, United IT Distribution, Network Security">
+        content="Cybersecurity Distributor Dubai, IT Distribution UAE, SASE Framework, Cloud Security, Data Center Protection, Network Security, Cato Networks, Cynet, Stonefly">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="United IT Distribution">
     <link rel="canonical" href="https://www.uniteditd.com/">
+
     <meta property="og:type" content="website">
-    <meta property="og:title" content="United IT Distribution | Next-Gen Cybersecurity">
+    <meta property="og:title" content="United IT Distribution | Next-Gen Cybersecurity Solutions">
     <meta property="og:description"
-        content="Safeguarding your digital universe with premium cybersecurity architectures like SASE and Cloud-Native security.">
+        content="Empowering businesses in the UAE with cutting-edge SASE, Cloud, and Data Center security architectures.">
     <meta property="og:image" content="assets/logo.png">
     <meta property="og:url" content="https://www.uniteditd.com/">
-    <title>United IT Distribution | Next-Gen Cybersecurity</title>
+    <meta property="og:locale" content="en_AE">
+
     <link rel="icon" type="image/png" sizes="16x16" href="assets/logo (Custom) .png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo (Custom) (2).png">
     <link rel="icon" type="image/png" sizes="48x48" href="assets/logo (Custom) (1).png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/logo (Custom) (1).png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Rajdhani:wght@500;600;700&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ITService",
+      "name": "United IT Distribution",
+      "image": "https://www.uniteditd.com/assets/logo.png",
+      "@id": "https://www.uniteditd.com",
+      "url": "https://www.uniteditd.com",
+      "telephone": "+971548796995",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sharjah Media City (Shams Free Zone)",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.2048, 
+        "longitude": 55.2708
+      },
+      "description": "Specializing in cutting-edge Cybersecurity solutions including SASE, Cloud-Native, and Data Center security in the UAE."
+    }
+    </script>
 
     <style>
         /* --- CORE THEME & RESET --- */
@@ -38,11 +67,6 @@
             --primary-glow: rgba(0, 212, 255, 0.4);
             --text-main: #ffffff;
             --text-muted: #94a3b8;
-
-            /* User Adjustable Hero Values */
-            --hero-img-width: 500px;
-            --hero-ring-1: 550px;
-            --hero-ring-2: 400px;
             --glass: rgba(255, 255, 255, 0.03);
             --glass-border: 1px solid rgba(255, 255, 255, 0.08);
             --font-body: 'Inter', sans-serif;
@@ -175,8 +199,6 @@
             background: #0044ff;
             top: -10%;
             left: -10%;
-            animation-delay: 0s;
-            /* optional stagger */
         }
 
         .blob-2 {
@@ -186,10 +208,8 @@
             bottom: 10%;
             right: -5%;
             animation-delay: 5s;
-            /* optional stagger */
         }
 
-        /* Keyframes for smooth floating */
         @keyframes float {
             0% {
                 transform: translate(0, 0) scale(1);
@@ -216,7 +236,6 @@
             background: rgba(5, 10, 16, 0.85);
             border-bottom: var(--glass-border);
             transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            border-radius: 0;
         }
 
         nav.scrolled {
@@ -247,12 +266,10 @@
             display: flex;
             gap: 8px;
             align-items: center;
-
         }
 
         .logo-img {
             height: 38px;
-            /* icon-like size */
             width: auto;
             display: block;
         }
@@ -277,7 +294,6 @@
             margin-top: 4px;
         }
 
-        /* Desktop Menu */
         .nav-links {
             display: flex;
             gap: 40px;
@@ -298,7 +314,6 @@
             display: flex;
         }
 
-        /* Mobile Hamburger & Menu */
         .hamburger {
             display: none;
             cursor: pointer;
@@ -309,7 +324,6 @@
         .mobile-menu {
             position: fixed;
             top: 70px;
-            /* Below navbar */
             left: 0;
             width: 100%;
             background: rgba(5, 10, 16, 0.98);
@@ -374,33 +388,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
         }
 
         .tech-ring {
-            width: var(--hero-ring-1);
-            height: var(--hero-ring-1);
+            width: 500px;
+            height: 500px;
             position: absolute;
             border-radius: 50%;
             animation: spin 6s linear infinite;
-
-            background:
-                conic-gradient(from 0deg,
-                    rgba(15, 50, 73, 0.722) 0deg,
-                    var(--primary) 270deg,
-                    rgba(0, 212, 255, 0.6) 280deg,
-                    rgba(0, 212, 255, 0.3) 290deg,
-                    rgba(0, 212, 255, 0) 300deg 360deg);
-
-            -webkit-mask:
-                radial-gradient(farthest-side, transparent 96%, #000 97%);
-            mask:
-                radial-gradient(farthest-side, transparent 96%, #000 97%);
+            background: conic-gradient(from 0deg, rgba(15, 50, 73, 0.722) 0deg, var(--primary) 270deg, rgba(0, 212, 255, 0.6) 280deg, rgba(0, 212, 255, 0.3) 290deg, rgba(0, 212, 255, 0) 300deg 360deg);
+            -webkit-mask: radial-gradient(farthest-side, transparent 96%, #000 97%);
+            mask: radial-gradient(farthest-side, transparent 96%, #000 97%);
         }
 
         .tech-ring-2 {
-            width: var(--hero-ring-2);
-            height: var(--hero-ring-2);
+            width: 350px;
+            height: 350px;
             border: 1px dashed rgba(22, 205, 229, 0.559);
             border-radius: 50%;
             position: absolute;
@@ -410,10 +413,13 @@
         .hero-img {
             position: relative;
             z-index: 2;
-            width: var(--hero-img-width);
-            border: none;
-            box-shadow: none;
-            background: transparent;
+            width: 100vh;
+            height: 65vh;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 0;
+            overflow: visible;
+            animation: floatSpin 6s ease-in-out infinite alternate;
         }
 
         @keyframes floatSpin {
@@ -429,7 +435,6 @@
                 transform: translateY(0px) scale(1);
             }
         }
-
 
         /* --- MARQUEE --- */
         .marquee-section {
@@ -522,7 +527,7 @@
             text-transform: uppercase;
         }
 
-        /* --- PREMIUM SOLUTIONS (FIXED 4 TILES) --- */
+        /* --- PREMIUM SOLUTIONS --- */
         .products-section {
             padding: 120px 0;
             background: linear-gradient(180deg, var(--bg-dark) 0%, #080f1a 100%);
@@ -531,7 +536,6 @@
         .solutions-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            /* Responsive grid */
             gap: 30px;
         }
 
@@ -894,8 +898,6 @@
             .solutions-grid {
                 grid-template-columns: 1fr;
             }
-
-            /* 1 column on mobile */
         }
     </style>
 </head>
@@ -908,7 +910,8 @@
     <nav>
         <div class="container nav-inner">
             <a href="#" class="logo">
-                <img src="assets/logo.png" alt="United IT Logo" class="logo-img">
+                <img src="assets/logo.png" alt="United IT Distribution - Cybersecurity Distributor in Dubai"
+                    class="logo-img" width="38" height="38">
 
                 <div class="logo-text">
                     <span class="logo-main">UNITED IT</span>
@@ -918,9 +921,9 @@
 
             <div class="nav-links">
                 <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Solutions</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" aria-label="About United IT Distribution">About</a>
+                <a href="#services" aria-label="Cybersecurity Services">Solutions</a>
+                <a href="#contact" aria-label="Contact Us">Contact</a>
             </div>
 
             <div class="nav-btn-desktop">
@@ -946,11 +949,14 @@
             <div class="hero-grid">
                 <div class="hero-text">
                     <span class="section-tag gs-reveal">Leading Cybersecurity Distributor</span>
-                    <h1 class="gs-reveal">Safeguarding Your <br><span class="gradient-text">Digital Universe</span></h1>
+                    <h1 class="gs-reveal">
+                        Safeguarding Your <br>
+                        <span class="gradient-text">Digital Universe</span>
+                    </h1>
                     <p class="gs-reveal">
-                        We are United IT Distribution, a trusted cybersecurity distributor in Dubai, UAE. We empower
-                        businesses with next-generation technologies like SASE, Cloud-Native Security, and Data Center
-                        protection.
+                        We are <strong>United IT Distribution</strong>, a trusted cybersecurity distributor in Dubai,
+                        UAE. We empower businesses with next-generation technologies like <strong>SASE, Cloud-Native
+                            Security, and Data Center protection</strong>.
                     </p>
                     <div class="gs-reveal"
                         style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-start;">
@@ -961,7 +967,9 @@
                 <div class="hero-visual gs-reveal">
                     <div class="tech-ring"></div>
                     <div class="tech-ring-2"></div>
-                    <img src="assets/hero-image.png" alt="Cyber Security" class="hero-img">
+                    <img src="assets/hero-image.png"
+                        alt="Cybersecurity Network Shield Illustration for United IT Distribution" class="hero-img"
+                        width="600" height="600" loading="eager">
                 </div>
             </div>
         </div>
@@ -980,7 +988,6 @@
                 <div class="marquee-item">Integrity</div>
                 <div class="marquee-item highlight-item"><i class="fa-solid fa-database"></i> Data Storage Security
                 </div>
-
                 <div class="marquee-item">Secure Access</div>
                 <div class="marquee-item highlight-item"><i class="fa-solid fa-cloud"></i> SASE Framework</div>
                 <div class="marquee-item">Agility</div>
@@ -1042,7 +1049,6 @@
         </div>
     </section>
 
-
     <div class="marquee-section marquee-reverse"
         style="padding: 48px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05); background: rgba(0, 0, 0, 0.3); overflow: hidden; position: relative;">
         <div
@@ -1051,14 +1057,12 @@
         <div
             style="position: absolute; inset-y: 0; right: 0; width: 80px; background: linear-gradient(to left, rgba(5, 10, 16, 0.9), transparent); z-index: 10; pointer-events: none;">
         </div>
-
         <div
             style="max-width: 1280px; margin: 0 auto; padding: 0 24px; text-align: center; margin-bottom: 32px; position: relative; z-index: 5;">
             <p
                 style="color: var(--text-muted); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase;">
                 Trusted by World's Best Companies</p>
         </div>
-
         <div class="marquee-container">
             <div class="marquee-track">
                 <div class="marquee-item"><i class="fa-brands fa-aws"></i> AWS Partner</div>
@@ -1071,7 +1075,6 @@
                 <div class="marquee-item"><i class="fa-brands fa-google"></i> Google Cloud</div>
                 <div class="marquee-item"><i class="fa-solid fa-certificate"></i> SOC2 Compliant</div>
                 <div class="marquee-item"><i class="fa-solid fa-globe"></i> ISO 27001</div>
-
             </div>
         </div>
     </div>
@@ -1087,10 +1090,10 @@
             </div>
 
             <div class="solutions-grid">
-
                 <div class="product-card gs-card">
                     <div class="p-image">
-                        <img src="assets/Network Server Close-Up.png" alt="SASE Security">
+                        <img src="assets/Network Server Close-Up.png" alt="SASE Framework Architecture" width="400"
+                            height="250" loading="lazy">
                     </div>
                     <div class="p-content">
                         <h3>SASE Framework <i class="fa-solid fa-network-wired"
@@ -1107,7 +1110,8 @@
 
                 <div class="product-card gs-card">
                     <div class="p-image">
-                        <img src="assets/lummi614361.png" alt="Cloud Native Security">
+                        <img src="assets/lummi614361.png" alt="Cloud-Native Security Illustration" width="400"
+                            height="250" loading="lazy">
                     </div>
                     <div class="p-content">
                         <h3>Cloud-Native Security <i class="fa-solid fa-cloud-arrow-up"
@@ -1124,7 +1128,8 @@
 
                 <div class="product-card gs-card">
                     <div class="p-image">
-                        <img src="assets/lummi489119.png" alt="Data Center Security">
+                        <img src="assets/lummi489119.png" alt="Data Center Security Infrastructure" width="400"
+                            height="250" loading="lazy">
                     </div>
                     <div class="p-content">
                         <h3>Data Center Security <i class="fa-solid fa-server"
@@ -1141,7 +1146,8 @@
 
                 <div class="product-card gs-card">
                     <div class="p-image">
-                        <img src="assets/lummi532305.png" alt="Data Storage Security">
+                        <img src="assets/lummi532305.png" alt="Data Storage Security Systems" width="400" height="250"
+                            loading="lazy">
                     </div>
                     <div class="p-content">
                         <h3>Data Storage Security <i class="fa-solid fa-database"
@@ -1198,10 +1204,7 @@
 
                 <div class="contact-form">
                     <form id="contactForm" action="https://formsubmit.co/info@gmail.com" method="POST">
-                        <!-- Honeypot Field (to prevent spam) -->
                         <input type="text" name="_honey" style="display: none;">
-
-                        <!-- FormSubmit Configuration -->
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" id="emailSubject" value="New Quote Request from United IT">
                         <input type="hidden" name="_template" value="box">
@@ -1258,7 +1261,6 @@
                 <div class="footer-brand">
                     <div class="logo">
                         <img src="assets/logo.png" alt="United IT Logo" class="logo-img">
-
                         <div class="logo-text">
                             <span class="logo-main">UNITED IT</span>
                             <span class="logo-sub">DISTRIBUTION</span>
@@ -1268,26 +1270,22 @@
                         globally recognized vendors.</p>
 
                     <div style="display: flex; gap: 16px; margin-top: 20px;">
-                        <a href="https://www.facebook.com/yourusername" target="_blank"
+                        <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer"
                             style="color: #e0f3ff; font-size: 1.2rem; transition: 0.3s;"
-                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#e0f3ff'">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/yourusername" target="_blank"
+                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#e0f3ff'"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer"
                             style="color: #e0f3ff; font-size: 1.2rem; transition: 0.3s;"
-                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#e0f3ff'">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/yourusername" target="_blank"
+                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#e0f3ff'"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
                             style="color: #e0f3ff; font-size: 1.2rem; transition: 0.3s;"
-                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#e0f3ff'">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://twitter.com/yourusername" target="_blank"
+                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#e0f3ff'"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer"
                             style="color: #e0f3ff; font-size: 1.2rem; transition: 0.3s;"
-                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#e0f3ff'">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
+                            onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#e0f3ff'"><i
+                                class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
                 <div>
@@ -1303,19 +1301,10 @@
                 <div>
                     <h4 style="margin-bottom: 20px;">Office Hours</h4>
                     <ul style="line-height: 2; color: var(--text-muted);">
-                        <li style="display: flex; justify-content: space-between;"><span>Mon</span><span>09:30 am –
-                                05:30 pm</span></li>
-                        <li style="display: flex; justify-content: space-between;"><span>Tue</span> <span>09:30 am –
-                                05:30 pm</span></li>
-                        <li style="display: flex; justify-content: space-between;"><span>Wed</span> <span>09:30 am –
-                                05:30 pm</span></li>
-                        <li style="display: flex; justify-content: space-between;"><span>Thu</span> <span>09:30 am –
-                                05:30 pm</span></li>
-                        <li style="display: flex; justify-content: space-between;"><span>Fri</span> <span>09:30 am –
-                                05:30 pm</span></li>
-                        <li style="display: flex; justify-content: space-between;"><span>Sat - Sun</span>
-                            <span>Closed</span>
-                        </li>
+                        <li style="display: flex; justify-content: space-between;"><span>Mon - Fri</span><span>09:30 am
+                                – 05:30 pm</span></li>
+                        <li style="display: flex; justify-content: space-between;"><span>Sat -
+                                Sun</span><span>Closed</span></li>
                     </ul>
                 </div>
                 <div>
@@ -1326,11 +1315,7 @@
                         <p style="margin-bottom: 10px;"><a href="mailto:info@uniteditd.com"
                                 style="color: var(--text-muted);">info@uniteditd.com</a></p>
                         <p style="margin-bottom: 10px;"><a href="tel:+971548796995"
-                                style="color: var(--text-muted);">+971 000000000</a></p>
-                        <p style="margin-bottom: 10px;"><a href="tel:+971548796995"
-                                style="color: var(--text-muted);">www.facebook.com</a></p>
-                        <p style="margin-bottom: 10px;"><a href="tel:+971548796995"
-                                style="color: var(--text-muted);">www.linkedin.com</a></p>
+                                style="color: var(--text-muted);">+971 54 879 6995</a></p>
                     </address>
                 </div>
             </div>
@@ -1355,40 +1340,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "United IT Distribution",
-  "image": "https://www.uniteditd.com/assets/logo.png",
-  "@id": "",
-  "url": "https://www.uniteditd.com",
-  "telephone": "+97100000000",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Sharjah Media City (Shams Free Zone)",
-    "addressLocality": "Dubai",
-    "addressCountry": "AE"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 25.2048, /* You need to find your exact coordinates */
-    "longitude": 55.2708
-  },
-  "description": "Specializing in cutting-edge Cybersecurity solutions including SASE, Cloud-Native, and Data Center security."
-}
-</script>
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        // Mobile Menu Toggle
         function toggleMenu() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('active');
         }
 
-        // Navigation Scroll Effect - Pop Up and Float
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             const mobileMenu = document.getElementById('mobileMenu');
@@ -1398,63 +1358,34 @@
             } else {
                 nav.classList.remove('scrolled');
             }
-
-            // Auto-collapse mobile menu on scroll
             if (mobileMenu && mobileMenu.classList.contains('active')) {
                 mobileMenu.classList.remove('active');
             }
         });
 
-        // Standard Reveal
-        gsap.from(".gs-reveal", {
-            y: 50, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out"
-        });
+        gsap.from(".gs-reveal", { y: 50, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out" });
+        gsap.from(".gs-reveal-left", { scrollTrigger: { trigger: ".about-section", start: "top 80%" }, x: -50, opacity: 0, duration: 1, ease: "power3.out" });
+        gsap.from(".gs-reveal-right", { scrollTrigger: { trigger: ".about-section", start: "top 80%" }, x: 50, opacity: 0, duration: 1, ease: "power3.out" });
+        gsap.from(".gs-reveal-up", { scrollTrigger: { trigger: ".contact-section", start: "top 85%" }, y: 60, opacity: 0, duration: 1, ease: "power3.out" });
+        gsap.to(".blob", { x: "random(-50, 50)", y: "random(-50, 50)", duration: 5, repeat: -1, yoyo: true, ease: "sine.inOut", stagger: 2 });
 
-        // About Sections
-        gsap.from(".gs-reveal-left", {
-            scrollTrigger: { trigger: ".about-section", start: "top 80%" },
-            x: -50, opacity: 0, duration: 1, ease: "power3.out"
-        });
-        gsap.from(".gs-reveal-right", {
-            scrollTrigger: { trigger: ".about-section", start: "top 80%" },
-            x: 50, opacity: 0, duration: 1, ease: "power3.out"
-        });
-
-
-        // Contact Reveal
-        gsap.from(".gs-reveal-up", {
-            scrollTrigger: { trigger: ".contact-section", start: "top 85%" },
-            y: 60, opacity: 0, duration: 1, ease: "power3.out"
-        });
-
-        // Blob Animation
-        gsap.to(".blob", {
-        });
-
-        // --- CONTACT FORM LOGIC ---
-
+        // Contact Form Logic
         const contactForm = document.getElementById('contactForm');
         const serviceSelect = document.getElementById('service');
         const emailSubject = document.getElementById('emailSubject');
 
-        // Dynamic Subject Update
-        // Updates the hidden subject field based on the selected service
         if (serviceSelect && emailSubject) {
             serviceSelect.addEventListener('change', function () {
                 const selectedText = this.options[this.selectedIndex].text;
-                // Avoid setting subject to "Select a solution..." if that is picked
                 if (selectedText && !selectedText.includes("Select")) {
                     emailSubject.value = `New Quote Request - ${selectedText}`;
                 }
             });
         }
 
-        // Handle Form Submission via Fetch (AJAX)
-        // This prevents the page from redirecting and allows showing the custom modal
         if (contactForm) {
             contactForm.addEventListener('submit', function (e) {
-                e.preventDefault(); // Stop default redirection
-
+                e.preventDefault();
                 const btn = this.querySelector('button[type="submit"]');
                 const originalText = btn.innerHTML;
                 btn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
@@ -1463,15 +1394,12 @@
                 fetch(this.action, {
                     method: 'POST',
                     body: new FormData(this),
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    headers: { 'Accept': 'application/json' }
                 })
                     .then(response => {
                         if (response.ok) {
-                            // Show success modal
                             document.getElementById('successModal').style.display = 'flex';
-                            contactForm.reset(); // Clear the form
+                            contactForm.reset();
                         } else {
                             alert('Oops! There was a problem submitting your form');
                         }
@@ -1481,29 +1409,24 @@
                         alert('There was a problem submitting your form');
                     })
                     .finally(() => {
-                        // Restore button state
                         btn.innerHTML = originalText;
                         btn.disabled = false;
                     });
             });
         }
 
-        // Close Modal Function
         function closeSuccessModal() {
             document.getElementById('successModal').style.display = 'none';
         }
 
         // --- CUSTOM NAVIGATION (History API) ---
         document.addEventListener("DOMContentLoaded", () => {
-            // Function to handle navigation
             const navigateToSection = (targetId) => {
                 const targetSection = document.getElementById(targetId);
                 if (targetSection) {
                     targetSection.scrollIntoView({ behavior: 'smooth' });
-                    // Update URL without hash
                     const newPath = targetId === 'home' ? '/' : `/${targetId}`;
                     history.pushState(null, null, newPath);
-                    // Update active state in menu
                     document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
                         link.classList.remove('active');
                         if (link.getAttribute('href') === `#${targetId}`) {
@@ -1513,14 +1436,11 @@
                 }
             };
 
-            // Intercept clicks on links starting with #
             document.querySelectorAll('a[href^="#"]').forEach(link => {
                 link.addEventListener('click', function (e) {
                     e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1); // Remove #
+                    const targetId = this.getAttribute('href').substring(1);
                     if (targetId) navigateToSection(targetId);
-
-                    // Close mobile menu if open
                     const menu = document.getElementById('mobileMenu');
                     if (menu && menu.classList.contains('active')) {
                         toggleMenu();
@@ -1528,7 +1448,6 @@
                 });
             });
 
-            // Handle Back/Forward buttons
             window.addEventListener('popstate', () => {
                 const path = window.location.pathname.replace('/', '');
                 const targetId = path || 'home';
@@ -1538,17 +1457,15 @@
                 }
             });
 
-            // Initial load handling (if server supports it and we land on /about)
             const path = window.location.pathname.replace('/', '');
             if (path && document.getElementById(path)) {
-                // specific section requested via path
                 setTimeout(() => {
                     document.getElementById(path).scrollIntoView({ behavior: 'auto' });
                 }, 100);
             }
         });
     </script>
-    <!-- Success Modal -->
+
     <div id="successModal"
         style="position: fixed; inset: 0; background: rgba(0,0,0,0.8); display: none; align-items: center; justify-content: center; z-index: 10000; backdrop-filter: blur(5px);">
         <div
@@ -1560,9 +1477,7 @@
             <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.5rem;">Request Submitted!</h3>
             <p style="color: var(--text-muted); margin-bottom: 30px;">Thank you for your request. We'll contact you
                 shortly.</p>
-            <button onclick="closeSuccessModal()" class="btn btn-primary">
-                Close
-            </button>
+            <button onclick="closeSuccessModal()" class="btn btn-primary">Close</button>
         </div>
     </div>
 </body>
